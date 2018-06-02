@@ -1,0 +1,56 @@
+.message {
+
+  &__item {
+    padding: 6px 6px 6px 15px;
+    display: flex;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  
+    &__text {
+      flex: 1;
+      font-size: 14px;
+      color: #3e3e3e;
+      word-break: break-all;
+
+      a {
+        color: #3399ff;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__date {
+      margin-left: 10px;
+      width: 94px;
+      white-space: nowrap;
+      font-size: 12px;
+      color: #7f7f7f;
+      text-align: right;
+    }
+
+    &--user {
+      background: #f7f5f7;
+    }
+
+    &.append-message {
+      background: #f7f5f7;
+      animation: reset-bg 2s linear;
+    }
+
+    @keyframes reset-bg {
+      from {
+        background: #e9f2fa;
+      },
+      99% {
+        background: #e9f2fa;
+      }
+      to {
+        background: #f7f5f7;
+      }
+    }
+  }
+
+}
